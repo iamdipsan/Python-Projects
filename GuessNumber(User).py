@@ -8,7 +8,7 @@ import random  # Import the random module for generating random numbers (though 
 
 def guess_number():
     """
-    Function where the computer attempts to guess a number chosen by the user within a specified range.
+    Function where the computer attempts to guess a number chosen by the user within a specified ranges.
     
     The user defines the lower and upper bounds of the range and provides a number for the computer to guess.
     The computer uses a binary search approach to guess the number and the user provides feedback to guide it.
