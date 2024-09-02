@@ -4,7 +4,8 @@
 # binary search approach to guess the number, and the user provides feedback to guide the
 # computer's guesses until it finds the correct number or determines that it is outside the range.
 
-import random  # Import the random module for generating random numbers (though it's not used in this version of the code)
+import random  # Import the random module for generating random numbers.
+#we are not using this for now.
 
 def guess_number():
     """
@@ -49,11 +50,11 @@ def guess_number():
                 print("The computer guessed your number correctly! Congrats!")
                 return  # Exit the function once the correct number is guessed
             else:
-                continue  # Continue guessing if the guess is correct but not the intended number
+                continue  
         elif feedback == 'h':
-            high = computer_guess - 1  # Adjust the upper bound if the guess is too high
-        elif feedback == 'l':
-            low = computer_guess + 1  # Adjust the lower bound if the guess is too low
+            high = computer_guess - 1  #if the guess is too high, lower the upper range.
+        elif feedback == 'l': #if the guess is two low, increase the lower range.
+            low = computer_guess + 1  
         else:
             print("Invalid feedback, please enter 'h', 'l', or 'c'.")  # Handle invalid feedback
 
